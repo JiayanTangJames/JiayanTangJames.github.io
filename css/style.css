@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura Std';
+  color: #fbf0d7;
+}
+a {
+    text-decoration: none;
+	 color: #fbf0d7;
+}
+.menu li{
+		float: left;
+		margin-right: 70px;
+		width: 170px;
+		 height: 50px;
+		 text-align: center;
+		 line-height: 50px;
+		 background-color: #fbf0d7;
+		 color: #498484;
+		 border-radius: 15px;
+		 font-weight: 500;
+		 font-size: 20x;
+	}
+.menu li a{
+	 color: #498484;
+}
+.menu{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.secend_title{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 5%;
+}
+.three_cont{
+	margin-left: 20%;
+	width: 60%;
+	height: 170px;
+	text-align: center;
+	font-size: 32px;
+	margin-top: 3%;
+}
+.four_pic{
+	margin-top: 3%;
+	height: 400px;
+	width: 60%;
+	margin-left: 20%;
+}
+.five_title{
+	width:100%;
+	height: 75px;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 3%;
+}
+.six_cont{
+	width: 90%;
+	height: 60px;
+	text-align: left;
+	margin-left: 8%;
+	font-size: 35px;
+}
+.seven_ul{
+	margin-left: 6%;
+	height: 300px;
+}
+.seven_ul li{
+	list-style: none;
+	float: left;
+	margin-right: 110px;
+	width: 170px;
+	height: 300px;
+}
+.eight_cont{
+	margin-left: 6%;
+	height: 70px;
+	margin-bottom: 80px;
+}
+.eight_cont li{
+	float: left;
+	margin-right: 130px;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	color: lightyellow;
+	font-weight: 500;
+	font-size: 19px;
+	list-style: none;
+}
+.add_car{
+	height: 800px;
+	width: 90%;
+	margin-left: 8%;
+	margin-top: 20px;
+}
+.car_img{
+	padding-top: 100px;
+	float: left;
+	width: 23%;
+	height: 550px;
+}
+.car_content{
+	float: right;
+	width: 75%;
+	height: 500px;
+	padding-top: 100px;
+	margin-left: 30px;
+}
+.car_content li{
+	list-style: none;
+	height: 50px;
+	width: 250px;
+	background-color: #fbf0d7;
+	color: #498484;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+}
+.car_span{
+	width: 85%;
+	display: inline-block;
+	padding-top: 20px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.car{
+	height: 320px;
+	width: 90%;
+	margin-left: 8%;
+}
+.car_left{
+	float: left;
+	width: 50%;
+}
+.car_right{
+	float: right;
+	width: 30%;
+	text-align: right;
+	margin-right: 11%;
+}
+.car_left_img{
+	float: left;
+	height: 280px;
+	width: 20%;
+}
+.car_left_title{
+	float: right;
+	width: 75%;
+	font-size: 16px;
+}
+.car_right_q{
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+.price{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.bottom_con{
+	width: 90%;
+	height: 100px;
+	margin-left: 7%;
+}
+.bottom_con span li {
+	list-style: none;
+	height: 50px;
+	width: 250px;
+	background-color: #FBF0D7;
+	color: #498484;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	margin-right: 30px;
+}
+.bottom_con span li a{
+	color: #498484;
+}
+.end{
+	text-align: center;
+	font-size: 80px;
+	padding-top: 20px;
+	font-family: "Constantia";
+}
+.end_shop{
+	width: 100%;
+	height: 200px;
+}
+.end_shop p{
+	text-align: center;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+.end_shop span{
+	margin-top: 60px;
+	display: inline-block;
+	margin-left: 43%;
+}
+.end_shop span li {
+	list-style: none;
+	height: 50px;
+	width: 250px;
+	background-color: #FBF0D7;
+	color: #498484;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	
+}

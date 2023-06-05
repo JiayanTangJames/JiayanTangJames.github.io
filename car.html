@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>deatil</title>
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+	
+</style>
+</head>
+<body style="background-color: #498484;height: auto;width: 100%;">
+
+<div id="root"></div>
+
+	<div style="display: flex;">
+		<div style="width: 100%;height: 270px;">
+			<div style="font-size: 70px;float: left;width: 90%;text-align: center;padding-top: 40px;font-family: 'Constantia';">
+				<a href="index.html">
+					<span style="margin-left: 8%;">Abbey's</span>
+					<img src="img/logo.svg" style="width: 4%;height: 4%;"/>
+					<div style="text-align: center;font-size: 70px;margin-left: 7%;">
+						Bookshop
+					</div>
+				</a>
+			</div>
+			<div style="width: 10%;float: right;padding-top: 70px;">
+				<img src="img/1685610144097.jpg" style="margin-right: 10px;margin-top: -5px;margin-bottom: 10px;">
+				<a href="car.html"><img src="img/1685610169537.jpg"></a>
+			</div>
+		</div>
+	</div>
+	<div style="width: 90%;height: 30px;margin-left: 5%;">
+		<ul class="menu">
+			<li>NEW RELEASES</li>
+			<li>GATEGORIES</li>
+			<li>GIFT VOUCHERS</li>
+			<li>PROMOTIONS</li>
+			<li>INFO</li>
+			<li><a href="car.html">CHECKOUT</a></li>
+		</ul>
+	</div>
+	<div class="five_title">
+		SHOPPING CART
+	</div>
+	<div id="content">
+		
+	</div>
+	<!-- <div class="car">
+		<div class="car_left">
+			<div class="car_left_img">
+				<img src="img/9781922768049.jpg" style="width: 100%;height: 100%;"/>
+			</div>
+			<div class="car_left_title">
+				History of the Criminal Justice System in Victoria
+				</div>
+		</div>
+		<div class="car_right">
+			<span style="display: inline-block;padding-right: 150px;">Qty:1</span>
+			<span style="font-weight: bold;font-size: 17px;">$40 </span>
+			<span style="font-size: 25px;margin-left: 10px;display: inline-block;">X</span>
+		</div>
+	</div>
+	<div class="car">
+		<div class="car_left">
+			<div class="car_left_img">
+				<img src="img/9781761263798.jpg" style="width: 100%;height: 100%;"/>
+			</div>
+			<div class="car_left_title">
+				Duck a I'Orange for Breakfast
+				</div>
+		</div>
+		<div class="car_right">
+			<span style="display: inline-block;padding-right: 150px;">Qty:1</span>
+			<span style="font-weight: bold;font-size: 17px;">$34.99 </span>
+			<span style="font-size: 25px;margin-left: 10px;display: inline-block;">X</span>
+		</div>
+	</div> -->
+	<div class="bottom_con">
+		<div style="float: left;width: 60%;"></div>
+		<div style="float: right;width: 40%;">
+			<span><li><a href="end.html">CHECKOUT NOW</a></li></span>
+			<span style="font-size: 20px;">Subtotal:</span>
+			<span style="font-size: 20px;margin-left: 70px;" id="price_num"></span>
+		</div>
+	</div>
+	<script>
+		var list=[
+			{
+				"id":"0",
+				"path":"img/9781922768049.jpg",
+				"title":"History of the Criminal Justice System in Victoria",
+				"no":"Qty:1",
+				"price":"$40"
+			},
+			{
+				"id":"1",
+				"path":"img/9781761263798.jpg",
+				"title":"CHECKOUT NOW",
+				"no":"Qty:1",
+				"price":"$74.99"
+			}
+		]
+		document.getElementById("price_num").innerHTML='$74.99' 
+		ht(list)
+		function ht(list){
+			document.getElementById("content").innerHTML=''
+			var str=''
+			for(var i =0;i<list.length;i++){
+				str+="<div class=\"car\">"+
+					"<div class=\"car_left\">"+
+						"<div class=\"car_left_img\">"+
+							"<img src=\""+list[i].path+"\" style=\"width: 100%;height: 100%;\"/>"+
+						"</div>"+
+						"<div class=\"car_left_title\">"+
+							""+list[i].title+""+
+							"</div>"+
+					"</div>"+
+					"<div class=\"car_right\">"+
+						"<span style=\"display: inline-block;padding-right: 150px;\">"+list[i].no+"</span>"+
+						"<span style=\"font-weight: bold;font-size: 17px;\">"+list[i].price+"</span>"+
+						"<span style=\"font-size: 25px;margin-left: 10px;display: inline-block;cursor:pointer;\" onclick='haihai("+JSON.stringify(list[i])+")'>X</span>"+
+					"</div>"+
+				"</div>"
+				if(list.length==1){
+					document.getElementById("price_num").innerHTML=list[i].price
+				}
+			}
+			document.getElementById("content").innerHTML=str
+			if(list.length==0){
+					document.getElementById("price_num").innerHTML="$0"
+			}
+		}
+		function haihai(item){
+			for(var i =0;i<list.length;i++){
+				if(list[i].title==item.title){
+					list.splice(i, 1);
+				}
+			}
+			ht(list)
+		}
+		
+	</script>
+</body>
+</html>
+
